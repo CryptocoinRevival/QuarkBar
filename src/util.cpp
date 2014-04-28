@@ -1024,7 +1024,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.quarkbar
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Quarkbar-bar";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Quarkbar";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1036,10 +1036,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Quarkbar-bar";
+    return pathRet / "Quarkbar";
 #else
     // Unix
-    return pathRet / ".quarkbar-bar";
+    return pathRet / ".quarkbar";
 #endif
 #endif
 }
