@@ -13,8 +13,12 @@
 #include <QDoubleValidator>
 #include <QFont>
 #include <QLineEdit>
+#if QT_VERSION >= 0x050000
+#include <QUrlQuery>
+#else
 #include <QUrl>
-#include <QTextDocument> // For Qt::escape
+#endif
+#include <QTextDocument> // for Qt::mightBeRichText
 #include <QAbstractItemView>
 #include <QClipboard>
 #include <QFileDialog>
@@ -80,13 +84,19 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin URI
-    if(!uri.isValid() || uri.scheme() != QString("quark"))
+    if(!uri.isValid() || uri.scheme() != QString("quarkbar"))
         return false;
 
     SendCoinsRecipient rv;
     rv.address = uri.path();
     rv.amount = 0;
+	
+#if QT_VERSION < 0x050000
     QList<QPair<QString, QString> > items = uri.queryItems();
+#else
+    QUrlQuery uriQuery(uri);
+    QList<QPair<QString, QString> > items = uriQuery.queryItems();
+#endif
     for (QList<QPair<QString, QString> >::iterator i = items.begin(); i != items.end(); i++)
     {
         bool fShouldReturnFalse = false;
@@ -125,13 +135,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert quark:// to quark:
+    // Convert quarkbar:// to quarkbar:
     //
-    //    Cannot handle this later, because quark:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because quarkbar:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("quark://"))
+    if(uri.startsWith("quarkbar://"))
     {
-        uri.replace(0, 10, "quark:");
+        uri.replace(0, 10, "quarkbar:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -139,7 +149,11 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString HtmlEscape(const QString& str, bool fMultiLine)
 {
+#if QT_VERSION < 0x050000
     QString escaped = Qt::escape(str);
+#else
+    QString escaped = str.toHtmlEscaped();
+#endif
     if(fMultiLine)
     {
         escaped = escaped.replace("\n", "<br>\n");
@@ -176,7 +190,11 @@ QString getSaveFileName(QWidget *parent, const QString &caption,
     QString myDir;
     if(dir.isEmpty()) // Default to user documents location
     {
+#if QT_VERSION < 0x050000
         myDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#else
+        myDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+#endif
     }
     else
     {
@@ -277,12 +295,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Quark.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Quarkbar.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Quark.lnk
+    // check for Quarkbar.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -359,7 +377,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "quark.desktop";
+    return GetAutostartDir() / "quarkbar.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -397,10 +415,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a quark.desktop file to the autostart directory:
+        // Write a quarkbar.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Quark\n";
+        optionFile << "Name=Quarkbar\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -424,7 +442,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     header = tr("QuarkBar-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  quark-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  quarkbar-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 

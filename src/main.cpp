@@ -4744,7 +4744,7 @@ void static BitcoinMiner(CWallet *pwallet)
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
 
-    try { loop {
+    try { while (true) {
         // disable in testing
         while (vNodes.empty())
             MilliSleep(1000);
@@ -4793,7 +4793,7 @@ void static BitcoinMiner(CWallet *pwallet)
         int64 nStart = GetTime();
         uint256 hash;
         // unsigned int nHashesDone = 0;
-        loop
+        while (true)
         {
 //            unsigned int nNonceFound;
 

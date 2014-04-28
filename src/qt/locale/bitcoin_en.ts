@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Quark</source>
-        <translation>About Quark</translation>
+        <source>About Quarkbar</source>
+        <translation>About Quarkbar</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Quark&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Quark&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Quarkbar&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Quarkbar&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Quark Developers</source>
-        <translation>The Quark Developers</translation>
+        <source>The Quarkbar Developers</source>
+        <translation>The Quarkbar Developers</translation>
     </message>
 </context>
 <context>
@@ -69,8 +69,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Quark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Quark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Quarkbar addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Quarkbar addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -84,8 +84,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Quark address</source>
-        <translation>Sign a message to prove you own a Quark address</translation>
+        <source>Sign a message to prove you own a Quarkbar address</source>
+        <translation>Sign a message to prove you own a Quarkbar address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -109,8 +109,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Quark address</source>
-        <translation>Verify a message to ensure it was signed with a specified Quark address</translation>
+        <source>Verify a message to ensure it was signed with a specified Quarkbar address</source>
+        <translation>Verify a message to ensure it was signed with a specified Quarkbar address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -124,8 +124,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your Quarkbar addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your Quarkbar addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -277,8 +277,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</translation>
+        <source>Quarkbar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
+        <translation>Quarkbar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +376,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Quark</source>
-        <translation>Show information about Quark</translation>
+        <source>Show information about Quarkbar</source>
+        <translation>Show information about Quarkbar</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -421,13 +421,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Quark address</source>
-        <translation>Send coins to a Quark address</translation>
+        <source>Send coins to a Quarkbar address</source>
+        <translation>Send coins to a Quarkbar address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Quark</source>
-        <translation>Modify configuration options for Quark</translation>
+        <source>Modify configuration options for Quarkbar</source>
+        <translation>Modify configuration options for Quarkbar</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -457,8 +457,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Quarkbar</source>
+        <translation>Quarkbar</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -482,8 +482,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Quark</source>
-        <translation>&amp;About Quark</translation>
+        <source>&amp;About Quarkbar</source>
+        <translation>&amp;About Quarkbar</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -502,13 +502,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
-        <translation>Sign messages with your Quark addresses to prove you own them</translation>
+        <source>Sign messages with your Quarkbar addresses to prove you own them</source>
+        <translation>Sign messages with your Quarkbar addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Quark addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Quarkbar addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Quarkbar addresses</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -538,15 +538,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Quark client</source>
-        <translation>Quark client</translation>
+        <source>Quarkbar client</source>
+        <translation>Quarkbar client</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Quark network</source>
+        <source>%n active connection(s) to Quarkbar network</source>
         <translation>
-            <numerusform>%n active connection to Quark network</numerusform>
-            <numerusform>%n active connections to Quark network</numerusform>
+            <numerusform>%n active connection to Quarkbar network</numerusform>
+            <numerusform>%n active connections to Quarkbar network</numerusform>
         </translation>
     </message>
     <message>
@@ -670,8 +670,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Quarkbar address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Quarkbar address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -685,8 +685,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Quark can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Quarkbar can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Quarkbar can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -751,8 +751,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Quark address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Quarkbar address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Quarkbar address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -833,13 +833,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Automatically start Quark after logging in to the system.</translation>
+        <source>Automatically start Quarkbar after logging in to the system.</source>
+        <translation>Automatically start Quarkbar after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Start Quark on system login</translation>
+        <source>&amp;Start Quarkbar on system login</source>
+        <translation>&amp;Start Quarkbar on system login</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -858,8 +858,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Quarkbar client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Quarkbar client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -868,8 +868,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Quark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Quark network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Quarkbar network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Quarkbar network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -943,8 +943,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Quark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Quarkbar.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Quarkbar.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -958,8 +958,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
-        <translation>Whether to show Quark addresses in the transaction list or not.</translation>
+        <source>Whether to show Quarkbar addresses in the transaction list or not.</source>
+        <translation>Whether to show Quarkbar addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1010,8 +1010,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Quark.</source>
-        <translation>This setting will take effect after restarting Quark.</translation>
+        <source>This setting will take effect after restarting Quarkbar.</source>
+        <translation>This setting will take effect after restarting Quarkbar.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1029,8 +1029,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quarkbar network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Quarkbar network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1083,8 +1083,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Cannot start quark: click-to-pay handler</translation>
+        <source>Cannot start quarkbar: click-to-pay handler</source>
+        <translation>Cannot start quarkbar: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1233,8 +1233,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the QuarkBar-Qt help message to get a list with possible Quark command-line options.</source>
-        <translation>Show the QuarkBar-Qt help message to get a list with possible Quark command-line options.</translation>
+        <source>Show the QuarkBar-Qt help message to get a list with possible Quarkbar command-line options.</source>
+        <translation>Show the QuarkBar-Qt help message to get a list with possible Quarkbar command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,13 +1253,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Quark - Debug window</source>
-        <translation>Quark - Debug window</translation>
+        <source>Quarkbar - Debug window</source>
+        <translation>Quarkbar - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Quark Core</source>
-        <translation>Quark Core</translation>
+        <source>Quarkbar Core</source>
+        <translation>Quarkbar Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1268,8 +1268,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Quarkbar debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Quarkbar debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1278,8 +1278,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Quark RPC console.</source>
-        <translation>Welcome to the Quark RPC console.</translation>
+        <source>Welcome to the Quarkbar RPC console.</source>
+        <translation>Welcome to the Quarkbar RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1462,8 +1462,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
 <context>
@@ -1527,8 +1527,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Quark address</source>
-        <translation>Sign the message to prove you own this Quark address</translation>
+        <source>Sign the message to prove you own this Quarkbar address</source>
+        <translation>Sign the message to prove you own this Quarkbar address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1563,8 +1563,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
-        <translation>Verify the message to ensure it was signed with the specified Quark address</translation>
+        <source>Verify the message to ensure it was signed with the specified Quarkbar address</source>
+        <translation>Verify the message to ensure it was signed with the specified Quarkbar address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1579,8 +1579,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
-        <translation>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
+        <source>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <translation>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1589,8 +1589,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Quark signature</source>
-        <translation>Enter Quark signature</translation>
+        <source>Enter Quarkbar signature</source>
+        <translation>Enter Quarkbar signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1663,8 +1663,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Quark Developers</source>
-        <translation>The Quark Developers</translation>
+        <source>The Quarkbar Developers</source>
+        <translation>The Quarkbar Developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2213,11 +2213,11 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>quark-core</name>
+    <name>quarkbar-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Quark version</source>
-        <translation>Quark version</translation>
+        <source>Quarkbar version</source>
+        <translation>Quarkbar version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2335,7 +2335,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Quarkbar Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
@@ -2346,7 +2346,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Quarkbar Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2361,8 +2361,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Quark is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Quark is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Quarkbar is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Quarkbar is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2406,8 +2406,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quarkbar will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quarkbar will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2656,8 +2656,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
-        <translation>SSL options: (see the Quark Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the Quarkbar Wiki for SSL setup instructions)</source>
+        <translation>SSL options: (see the Quarkbar Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2846,13 +2846,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Quark</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Quarkbar</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Quarkbar</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Wallet needed to be rewritten: restart Quark to complete</translation>
+        <source>Wallet needed to be rewritten: restart Quarkbar to complete</source>
+        <translation>Wallet needed to be rewritten: restart Quarkbar to complete</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2911,8 +2911,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Quark is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Quark is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Quarkbar is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Quarkbar is probably already running.</translation>
     </message>
     <message>
         <location line="+64"/>
