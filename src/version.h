@@ -28,6 +28,9 @@ extern const std::string CLIENT_DATE;
 static const int PROTOCOL_VERSION = 70002;
 
 // earlier versions not supported as of Feb 2012, and are disconnected
+static const int INIT_PROTO_VERSION = 209;
+
+//Hardfork Yay!
 static const int MIN_PROTO_VERSION = 70002;
 
 // nTime field added to CAddress, starting with this version;
