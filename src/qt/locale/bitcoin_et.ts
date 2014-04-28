@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Quark</source>
+        <source>About Quarkbar</source>
         <translation>Quarkist</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Quark&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Quarkbar&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Quarki&lt;/b&gt; versioon</translation>
     </message>
     <message>
@@ -34,7 +34,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+0"/>
-        <source>The Quark Developers</source>
+        <source>The Quarkbar Developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -67,7 +67,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Quark addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Quarkbar addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Maksete saamiseks kasutatavad Quarki aadressid. Maksjate paremaks jälgimiseks võib igaühele anda erineva.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Quark address</source>
+        <source>Sign a message to prove you own a Quarkbar address</source>
         <translation>Allkirjasta sõnum, et tõestada Bitconi aadressi olemasolu.</translation>
     </message>
     <message>
@@ -107,7 +107,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Quark address</source>
+        <source>Verify a message to ensure it was signed with a specified Quarkbar address</source>
         <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Quarki aadressiga.</translation>
     </message>
     <message>
@@ -122,7 +122,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Quark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Quarkbar addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Need on sinu Quarki aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
@@ -275,8 +275,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>Quark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
-        <translation>Quark sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista quarkide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Quarkbar will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your quarks from being stolen by malware infecting your computer.</source>
+        <translation>Quarkbar sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista quarkide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,7 +374,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Quark</source>
+        <source>Show information about Quarkbar</source>
         <translation>Kuva info Quarki kohta</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Quark address</source>
+        <source>Send coins to a Quarkbar address</source>
         <translation>Saada münte Quarki aadressile</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Quark</source>
+        <source>Modify configuration options for Quarkbar</source>
         <translation>Muuda Quarki seadeid</translation>
     </message>
     <message>
@@ -455,8 +455,8 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Quark</source>
-        <translation>Quark</translation>
+        <source>Quarkbar</source>
+        <translation>Quarkbar</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,7 +480,7 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Quark</source>
+        <source>&amp;About Quarkbar</source>
         <translation>%Quarkist</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Quark addresses to prove you own them</source>
+        <source>Sign messages with your Quarkbar addresses to prove you own them</source>
         <translation>Omandi tõestamiseks allkirjasta sõnumid oma Quarki aadressiga</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Quark addresses</source>
+        <source>Verify messages to ensure they were signed with specified Quarkbar addresses</source>
         <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Quarki aadressiga</translation>
     </message>
     <message>
@@ -536,12 +536,12 @@ Toode sisaldab OpenSSL Projekti all toodetud tarkvara, mis on kasutamiseks OpenS
     </message>
     <message>
         <location line="+47"/>
-        <source>Quark client</source>
+        <source>Quarkbar client</source>
         <translation>Quarki klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Quark network</source>
+        <source>%n active connection(s) to Quarkbar network</source>
         <translation><numerusform>%n aktiivne ühendus Quarki võrku</numerusform><numerusform>%n aktiivset ühendust Quarki võrku</numerusform></translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Quark address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Quarkbar address or malformed URI parameters.</source>
         <translation>URI ei suudeta parsida. Põhjuseks võib olla kehtetu Quarki aadress või vigased URI parameetrid.</translation>
     </message>
     <message>
@@ -670,8 +670,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Quark can no longer continue safely and will quit.</source>
-        <translation>Ilmnes kriitiline tõrge. Quark suletakse turvakaalutluste tõttu.</translation>
+        <source>A fatal error occurred. Quarkbar can no longer continue safely and will quit.</source>
+        <translation>Ilmnes kriitiline tõrge. Quarkbar suletakse turvakaalutluste tõttu.</translation>
     </message>
 </context>
 <context>
@@ -736,7 +736,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Quark address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Quarkbar address.</source>
         <translation>Sisestatud aadress &quot;%1&quot; ei ole Quarkis kehtiv.</translation>
     </message>
     <message>
@@ -818,13 +818,13 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Quark after logging in to the system.</source>
-        <translation>Käivita Quark süsteemi logimisel.</translation>
+        <source>Automatically start Quarkbar after logging in to the system.</source>
+        <translation>Käivita Quarkbar süsteemi logimisel.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Quark on system login</source>
-        <translation>&amp;Start Quark sisselogimisel</translation>
+        <source>&amp;Start Quarkbar on system login</source>
+        <translation>&amp;Start Quarkbar sisselogimisel</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -843,7 +843,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Quark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Quarkbar client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Quarki kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
@@ -853,7 +853,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Quark network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Quarkbar network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Kasuta Quarki võrgustikku ühendumiseks SOCKS turva proxy&apos;t (nt Tor&apos;i kasutamisel).</translation>
     </message>
     <message>
@@ -928,7 +928,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quark.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Quarkbar.</source>
         <translation>Kasutajaliidese keele valimise koht. Valik rakendub Quarki käivitamisel.</translation>
     </message>
     <message>
@@ -943,7 +943,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Quark addresses in the transaction list or not.</source>
+        <source>Whether to show Quarkbar addresses in the transaction list or not.</source>
         <translation>Kuvada Quarki aadress tehingute loetelus või mitte.</translation>
     </message>
     <message>
@@ -995,7 +995,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Quark.</source>
+        <source>This setting will take effect after restarting Quarkbar.</source>
         <translation>Tehtud valik rakendub Quarki käivitamisel.</translation>
     </message>
     <message>
@@ -1014,7 +1014,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quark network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quarkbar network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1068,8 +1068,8 @@ Aadress: %4⏎</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start quark: click-to-pay handler</source>
-        <translation>Quark ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start quarkbar: click-to-pay handler</source>
+        <translation>Quarkbar ei käivitu: vajuta-maksa toiming</translation>
     </message>
 </context>
 <context>
@@ -1218,7 +1218,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the QuarkBar-Qt help message to get a list with possible Quark command-line options.</source>
+        <source>Show the QuarkBar-Qt help message to get a list with possible Quarkbar command-line options.</source>
         <translation>Näita kehtivate käsurea valikute kuvamiseks Quarki-Qt abiteksti</translation>
     </message>
     <message>
@@ -1238,12 +1238,12 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Quark - Debug window</source>
-        <translation>Quark - debugimise aken</translation>
+        <source>Quarkbar - Debug window</source>
+        <translation>Quarkbar - debugimise aken</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Quark Core</source>
+        <source>Quarkbar Core</source>
         <translation>Quarki tuumik</translation>
     </message>
     <message>
@@ -1253,7 +1253,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Quark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Quarkbar debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ava Quarki logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
@@ -1263,7 +1263,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Quark RPC console.</source>
+        <source>Welcome to the Quarkbar RPC console.</source>
         <translation>Teretulemast Quarki RPC konsooli.</translation>
     </message>
     <message>
@@ -1447,7 +1447,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation>Sisesta Quarki aadress (nt: Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
 </context>
@@ -1512,7 +1512,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Quark address</source>
+        <source>Sign the message to prove you own this Quarkbar address</source>
         <translation>Allkirjasta sõnum Quarki aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
@@ -1548,7 +1548,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Quark address</source>
+        <source>Verify the message to ensure it was signed with the specified Quarkbar address</source>
         <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Quarki aadressiga.</translation>
     </message>
     <message>
@@ -1564,7 +1564,7 @@ Aadress: %4⏎</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Quark address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
+        <source>Enter a Quarkbar address (e.g. Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</source>
         <translation>Sisesta Quarki aadress (nt: Qi1NooNjQySQLDJ643HWfZZ7UN2EmLEvix)</translation>
     </message>
     <message>
@@ -1574,7 +1574,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Quark signature</source>
+        <source>Enter Quarkbar signature</source>
         <translation>Sisesta Quarki allkiri</translation>
     </message>
     <message>
@@ -1648,7 +1648,7 @@ Aadress: %4⏎</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Quark Developers</source>
+        <source>The Quarkbar Developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2183,10 +2183,10 @@ Aadress: %4⏎</translation>
     </message>
 </context>
 <context>
-    <name>quark-core</name>
+    <name>quarkbar-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Quark version</source>
+        <source>Quarkbar version</source>
         <translation>Quarki versioon</translation>
     </message>
     <message>
@@ -2222,7 +2222,7 @@ Aadress: %4⏎</translation>
     <message>
         <location line="+3"/>
         <source>Specify pid file (default: quarkbard.pid)</source>
-        <translation>Täpsusta PID fail (vaikimisi: quark.pid)</translation>
+        <translation>Täpsusta PID fail (vaikimisi: quarkbar.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2305,7 +2305,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Quarkbar Alert&quot; admin@foo.com
 </source>
         <translation>%s, sul tuleb rpcpassword määrata seadete failis:
 %s
@@ -2316,7 +2316,7 @@ rpcpassword=%s
 Kasutajanimi ning parool EI TOHI kattuda.
 Kui faili ei leita, loo see ainult-omaniku-loetavas failiõigustes .
 Soovitatav on seadistada tõrgete puhul teavitus;
-nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
+nt: alertnotify=echo %%s | email -s &quot;Quarkbar Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2331,8 +2331,8 @@ nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Quark is probably already running.</source>
-        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Quark juba avatud.</translation>
+        <source>Cannot obtain a lock on data directory %s. Quarkbar is probably already running.</source>
+        <translation>Ei suuda määrata ainuõigust andmekaustale %s. Tõenäolisel on Quarkbar juba avatud.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2376,8 +2376,8 @@ nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quark will not work properly.</source>
-        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Quark ei tööta korralikult</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quarkbar will not work properly.</source>
+        <translation>Hoiatus: Palun kontrolli oma arvuti kuupäeva/kellaaega! Kui arvuti kell on vale, siis Quarkbar ei tööta korralikult</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2626,7 +2626,7 @@ nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Quark Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Quarkbar Wiki for SSL setup instructions)</source>
         <translation>SSL valikud: (vaata Quarki Wikist või SSL sätete juhendist)</translation>
     </message>
     <message>
@@ -2816,13 +2816,13 @@ nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quark</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Quarkbar</source>
         <translation>Viga wallet.dat käivitamisel: Rahakott nõuab Quarki uusimat versiooni</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Quark to complete</source>
-        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Quark</translation>
+        <source>Wallet needed to be rewritten: restart Quarkbar to complete</source>
+        <translation>Rahakott tuli ümberkirjutada: toimingu lõpetamiseks taaskäivita Quarkbar</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2881,8 +2881,8 @@ nt: alertnotify=echo %%s | email -s &quot;Quark Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Quark is probably already running.</source>
-        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Quark juba töötab.</translation>
+        <source>Unable to bind to %s on this computer. Quarkbar is probably already running.</source>
+        <translation>%s&apos;ga ei ole võimalik sellest arvutist siduda. Quarkbar juba töötab.</translation>
     </message>
     <message>
         <location line="+64"/>
