@@ -1018,13 +1018,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Quarkbar
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Quarkbar
-    // Mac: ~/Library/Application Support/Quarkbar
-    // Unix: ~/.quarkbar
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Quark-bar
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Quark-bar
+    // Mac: ~/Library/Application Support/Quark-bar
+    // Unix: ~/.quark-bar
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Quarkbar";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Quark-bar";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1036,10 +1036,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Quarkbar";
+    return pathRet / "Quark-bar";
 #else
     // Unix
-    return pathRet / ".quarkbar";
+    return pathRet / ".quark-bar";
 #endif
 #endif
 }
