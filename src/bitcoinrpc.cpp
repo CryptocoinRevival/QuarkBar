@@ -288,12 +288,7 @@ Value getcheckpoint(const Array& params, bool fHelp)
     return result;
 }
 
-Value ValueFromAmountWithFee(int64 amount)
-{
-    if(amount<=0 || amount >= MAX_TX_FEE * COIN)
-	{
-		amount = ( amount % (MAX_TX_FEE * COIN ) );
-	}
+Value ValueFromAmountWithFee(int64 amount) {
 	return (double)amount / (double)COIN;
 }
 
