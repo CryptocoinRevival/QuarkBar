@@ -1347,6 +1347,11 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     // Retarget
     bnNew *= nActualTimespan;
     bnNew /= nTargetTimespan;
+    /// debug print
+    printf("DarkGravityWave3 RETARGET\n");
+    printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
+    printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+    printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
     if (bnNew > bnProofOfWorkLimit){
         bnNew = bnProofOfWorkLimit;
