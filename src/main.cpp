@@ -1310,6 +1310,23 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 	return GetNextWorkRequired_old(pindexLast, pblock);
 }
 
+double ConvertBitsToDouble(unsigned int nBits){
+    int nShift = (nBits >> 24) & 0xff;
+    double dDiff =
+        (double)0x0000ffff / (double)(nBits & 0x00ffffff);
+    while (nShift < 29)
+    {
+        dDiff *= 256.0;
+        nShift++;
+    }
+    while (nShift > 29)
+    {
+        dDiff /= 256.0;
+        nShift--;
+    }
+    return dDiff;
+}
+
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
 {
     CBigNum bnTarget;
@@ -2307,10 +2324,36 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
 
+#ifdef _WIN32
+        // Check proof of work Taken from 
+        if(nHeight >= 225000){
+            unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
+            double n1 = ConvertBitsToDouble(nBits);
+            double n2 = ConvertBitsToDouble(nBitsNext);
+   //         if (nHeight <= 45000) {
+                if (abs(n1-n2) > n1*0.2) 
+                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
+ //           } else {
+ //               if (abs(n1-n2) > n1*0.005) 
+ //                   return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW2)"));
+            }
+        } else {
+            if (nBits != GetNextWorkRequired(pindexPrev, this))
+                return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
+        }
+#else
         // Check proof of work
-        if (nBits != GetNextWorkRequired(pindexPrev, this))
-            return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
-
+        if(nHeight >= 225000){
+            unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
+            double n1 = ConvertBitsToDouble(nBits);
+            double n2 = ConvertBitsToDouble(nBitsNext);
+            if (abs(n1-n2) > n1*0.2)
+                return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
+        } else {
+            if (nBits != GetNextWorkRequired(pindexPrev, this))
+                return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
+        }
+#endif
         // Check timestamp against prev
         if (GetBlockTime() <= pindexPrev->GetMedianTimePast())
             return state.Invalid(error("AcceptBlock() : block's timestamp is too early"));
