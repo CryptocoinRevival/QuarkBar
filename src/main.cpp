@@ -2399,9 +2399,8 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
             unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
             double n1 = ConvertBitsToDouble(nBits);
             double n2 = ConvertBitsToDouble(nBitsNext);
-                if (abs(n1-n2) > n1*0.2) 
-                    return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
-            }
+            if (abs(n1-n2) > n1*0.2)
+                return state.DoS(100, error("AcceptBlock() : incorrect proof of work (DGW pre-fork)"));
         } else {
             if (nBits != GetNextWorkRequired(pindexPrev, this))
                 return state.DoS(100, error("AcceptBlock() : incorrect proof of work"));
