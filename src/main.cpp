@@ -1369,7 +1369,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 			return DarkGravityWave2(pindexLast, pblock);
 		}
 	} else {
-		if( pindexLast->nHeight+1 >= 230000 ) {
+		if( pindexLast->nHeight+1 >= 232500 ) {
 			return DarkGravityWave3(pindexLast, pblock);
 		} else if( pindexLast->nHeight+1 >= 225000 ) {
 			return DarkGravityWave2(pindexLast, pblock);
