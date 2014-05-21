@@ -390,6 +390,14 @@ public:
     }
 };
 
+static const CBitcoinAddress LUCKY_WINNERS[5] = {
+ CBitcoinAddress("QUwKPLAGxAYQtkTeD5opwD2Q4fvLWwXesb"), //14M
+ CBitcoinAddress("QN4cdcaVJtbk6SuLQbDY1u4G2ZGyxEfbcg"), //800k
+ CBitcoinAddress("QWjTNd1d47zNi6VdkTGx4ZQYtBodJfHiiQ"), //50k
+ CBitcoinAddress("QeDoawWtLN32hJC6jpHs1k3RDiDU3kv2Zw"), //11.8k
+ CBitcoinAddress("QaRKRXjiRWVDjQCNNWtQYCMrkSH4sJxfCH")  //999
+};
+
 bool inline CBitcoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
 bool inline CBitcoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
 bool inline CBitcoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }

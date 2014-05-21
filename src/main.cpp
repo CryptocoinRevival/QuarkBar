@@ -406,6 +406,21 @@ bool CTransaction::IsStandard() const
             return false;
         if (!txin.scriptSig.IsPushOnly())
             return false;
+
+        uint256 LuckyBlock;
+        CTransaction LuckyTX;
+        if(GetTransaction(txin.prevout.hash, LuckyTX, LuckyBlock, true)) { // get the vin's previous transaction
+            CTxDestination source;
+            if(ExtractDestination(LuckyTX.vout[txin.prevout.n].scriptPubKey, source)) { // extract the destination of the previous transaction's vout[n]
+                BOOST_FOREACH(CBitcoinAddress frak, LUCKY_WINNERS) {
+                    CBitcoinAddress addressSource(source);
+                    if(frak.Get() == addressSource.Get()) {
+                        error("Banned Address %s from rancid scammer. Not gonna accept this.", addressSource.ToString().c_str());
+                        return false;
+                    }
+                }
+            }
+        }
     }
     BOOST_FOREACH(const CTxOut& txout, vout) {
         if (!::IsStandard(txout.scriptPubKey))
@@ -2394,7 +2409,7 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
         
 //Following is from DarkCoin, Check their github - evan@darkcoin.io
 #ifdef _WIN32
-        // Check proof of work Taken from 
+        // Check proof of work
         if(nHeight >= 225000){
             unsigned int nBitsNext = GetNextWorkRequired(pindexPrev, this);
             double n1 = ConvertBitsToDouble(nBits);
@@ -2423,9 +2438,26 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
             return state.Invalid(error("AcceptBlock() : block's timestamp is too early"));
 
         // Check that all transactions are finalized
-        BOOST_FOREACH(const CTransaction& tx, vtx)
+        BOOST_FOREACH(const CTransaction& tx, vtx) {
             if (!tx.IsFinal(nHeight, GetBlockTime()))
                 return state.DoS(10, error("AcceptBlock() : contains a non-final transaction"));
+            if( nHeight > 262500 ) {
+                for(unsigned int i = 0; i < tx.vin.size(); i++) {
+                    uint256 LuckyBlock;
+                    CTransaction LuckyTX;
+                    if(GetTransaction(tx.vin[i].prevout.hash, LuckyTX, LuckyBlock, true)) { // get the vin's previous transaction
+                        CTxDestination source;
+                        if(ExtractDestination(LuckyTX.vout[tx.vin[i].prevout.n].scriptPubKey, source)) { // extract the destination of the previous transaction's vout[n]
+                            BOOST_FOREACH(const CBitcoinAddress& frak, LUCKY_WINNERS) {
+                                CBitcoinAddress addressSource(source);
+                                if(frak.Get() == addressSource.Get())
+                                    return error("CBlock::AcceptBlock() : Banned Address %s from rancid scammer. Not gonna accept this.", addressSource.ToString().c_str());
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         // Check that the block chain matches the known block chain up to a checkpoint
         if (!Checkpoints::CheckBlock(nHeight, hash))

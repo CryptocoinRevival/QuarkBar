@@ -1191,7 +1191,7 @@ void MapPort(bool)
 // Each pair gives a source name and a seed name.
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
-static const char *strMainNetDNSSeed[][3] = {
+static const char *strMainNetDNSSeed[][2] = {
     {"official.chain", "qb.seeds.cryptocoinrevival.com"},
     {"backup.official.chain", "seed.qb.obfuscode.net"},
     {NULL, NULL}
