@@ -473,3 +473,4 @@ public:
 };
 
 #endif // BITCOIN_BASE58_H
+
