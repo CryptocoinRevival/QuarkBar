@@ -12,6 +12,7 @@
 #include "db.h"
 #include "alert.h"
 #include "checkpoints.h"
+#include "rpcpulse.h"
 
 #include <boost/asio.hpp>
 #include <boost/asio/ip/v6_only.hpp>
@@ -364,6 +365,7 @@ static const CRPCCommand vRPCCommands[] =
 	{ "getnetworkhashps",       &getnetworkhashps,       true,      false },
     { "getinfo",                &getinfo,                true,      false },
     { "getmininginfo",          &getmininginfo,          true,      false },
+    { "getpulseinfo",           &getpulseinfo,           true,      false },
     { "getnewaddress",          &getnewaddress,          true,      false },
     { "getaccountaddress",      &getaccountaddress,      true,      false },
     { "setaccount",             &setaccount,             true,      false },
