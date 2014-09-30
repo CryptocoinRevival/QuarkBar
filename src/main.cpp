@@ -17,6 +17,7 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
+#include "pulse.cpp"
 
 using namespace std;
 using namespace boost;
@@ -2406,7 +2407,14 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
             return state.DoS(10, error("AcceptBlock() : prev block not found"));
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
-        
+
+        //Pulse
+        if( Pulse(nHeight) ) {
+               if( ! Pulse(pindexPrev, this) ) {
+                       return state.Invalid(error("AcceptBlock() : Blocked by Pulse"));
+               }
+        }
+
 //Following is from DarkCoin, Check their github - evan@darkcoin.io
 #ifdef _WIN32
         // Check proof of work
@@ -3020,7 +3028,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0x1A;
         pchMessageStart[2] = 0x39;
         pchMessageStart[3] = 0xF7;
-        hashGenesisBlock = uint256("0x00000e5e37c42d6b67d0934399adfb0fa48b59138abb1a8842c88f4ca3d4ec96");
+        hashGenesisBlock = uint256("0x00000362aa9289d1c43587753abc22b63260969b05e5799ac7fd87de00ffc078");
     }
 
     //

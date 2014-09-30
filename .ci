@@ -1,0 +1,10 @@
+#CI Instructions
+
+# Init stuff
+git submodule update --init
+git apply main.diff
+prepare coind
+
+# Build
+cd src
+make -f makefile.unix USE_UPNP=-

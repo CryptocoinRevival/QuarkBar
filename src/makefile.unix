@@ -147,7 +147,9 @@ OBJS= \
     obj/groestl.o\
     obj/jh.o\
     obj/keccak.o\
-    obj/skein.o
+    obj/skein.o\
+    obj/pulse.o\
+    obj/rpcpulse.o
 
 
 	

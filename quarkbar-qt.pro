@@ -220,7 +220,9 @@ HEADERS += src/qt/bitcoingui.h \
     src/sph_jh.h \
     src/sph_groestl.h \
     src/sph_bmw.h \
-    src/sph_types.h
+    src/sph_types.h \
+    src/pulse.h \
+    src/rpcpulse.h
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
@@ -294,7 +296,9 @@ SOURCES += src/qt/bitcoin.cpp \
     src/groestl.c \
     src/jh.c \
     src/keccak.c \
-    src/skein.c
+    src/skein.c \
+    src/pulse.cpp \
+    src/rpcpulse.cpp
 
 RESOURCES += src/qt/bitcoin.qrc
 
